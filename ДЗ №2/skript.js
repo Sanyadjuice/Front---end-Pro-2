@@ -1,8 +1,8 @@
-let number1 = +prompt('Number1?');
+const number1 = +prompt('Number1?');
 
-let number2 = +prompt('Number2?');
+const number2 = +prompt('Number2?');
 
-let operation = prompt('Operation?');
+const operation = prompt('Operation?');
 
 if (operation==="+") {
     alert('Результат: ' + number1 + operation + number2 + ' = ' + (number1 + number2));
