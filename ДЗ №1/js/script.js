@@ -1,3 +1,3 @@
-let name = prompt ('', 'Alex')
+let userName = prompt ('', 'Alex')
 
-alert('"' + 'Hallo, '+ name + "!"+ ' How are you?"')
+alert('"Hallo, '+ userName + '! How are you?"')
