@@ -1,5 +1,5 @@
-// let a = +prompt("Введите данные 1", )
-// let b = +prompt("Введите данные 2", )
+let a = +prompt("Введите данные 1", )
+let b = +prompt("Введите данные 2", )
 // a === 0 ? console.log("Верно") : console.log("Неверно")
 // a > 0 ? console.log("Верно") : console.log("Неверно")
 // a < 0 ? console.log("Верно") : console.log("Неверно")
@@ -26,29 +26,29 @@
 //     alert (result);
 // }
 //
-// if (a <= 1 || b >= 6 && b < 14) {
-//     alert("Верно")
-// } else {
-//     alert("Неверно")
-// }
-
-let num = +prompt("Введите case", )
-let result
-switch (num) {
-    case 1:
-            result = "Зима";
-            alert(result);
-            break;
-    case 2:
-            result = "Весна"
-            alert(result)
-            break;
-    case 3:
-            result = "Лето"
-            alert(result)
-            break;
-    case 4:
-            result = "Осень"
-            alert(result)
-            break;
+if  ((a > 2 && a < 11)  || (b >= 6 && b < 14))  {
+    alert("Верно")
+} else {
+    alert("Неверно")
 }
+
+// let num = +prompt("Введите case", )
+// let result
+// switch (num) {
+//     case 1:
+//             result = "Зима";
+//             alert(result);
+//             break;
+//     case 2:
+//             result = "Весна"
+//             alert(result)
+//             break;
+//     case 3:
+//             result = "Лето"
+//             alert(result)
+//             break;
+//     case 4:
+//             result = "Осень"
+//             alert(result)
+//             break;
+// }

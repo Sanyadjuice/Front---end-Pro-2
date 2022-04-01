@@ -13,6 +13,7 @@
 // 4) С помощью alert или console.log выводим результат действия (add, sub, mult, div) со всеми операндами (Н-р "2 + 3 = 5" )
 
 
+    let result = null
 
     if (operator === "add") {
         result = a + b
