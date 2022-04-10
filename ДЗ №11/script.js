@@ -1,23 +1,23 @@
 'use strict';
 const yearOfBirth = +prompt("Твой год рождения?", )
 
-
-let country = null;
-let favoriteSport = null;
-let userYears = null;
-let today = new Date();
-let year = today.getFullYear();
-
+let country;
+let favoriteSport;
+let userYears;
+let sport;
+let year = new Date();
+year = year.getFullYear();
 
 
 if (yearOfBirth !== 0 && isNaN(yearOfBirth) !== true) {
-  userYears = year - yearOfBirth
+  userYears = (`Твой возраст: ${year - yearOfBirth}`)
 } else {
     alert('Жаль, что Вы не захотели ввести свой год рождения')
+    userYears = 'Вы не ввели свой возраст'
 }
 
 let userCity = prompt("В каком городе ты живешь?", 'Одесса')
-if (userCity !== null) {
+if (userCity !== null && isNaN( +userCity )) {
     if ( userCity === "Киев") {
         country = "Ты живешь в столице Украины"
     } else if (userCity === "Москва") {
@@ -29,10 +29,11 @@ if (userCity !== null) {
     }
 } else   {
     alert('Жаль, что Вы не захотели ввести свой город')
+    country = 'Вы не ввели свой город'
 }
 
-let sport = prompt("Твой любимый вид спорта", 'бокс')
-if (sport !== null) {
+sport = prompt("Твой любимый вид спорта", 'бокс')
+if (sport !== null && isNaN( +sport )) {
     if ( sport === "бокс") {
         favoriteSport = "Круто ты хочешь стать Александром Усиком"
     } else if (sport === "футбол") {
@@ -44,7 +45,8 @@ if (sport !== null) {
     }
 } else   {
     alert('Жаль, что Вы не захотели ввести свой любимый вид спорта')
+    favoriteSport = 'Вы не ввели свой вид спорта'
 }
 
-alert(`Твой возраст: ${2022 - yearOfBirth} \n${country} \n${favoriteSport}`)
+alert(`${userYears} \n${country} \n${favoriteSport}`)
 
