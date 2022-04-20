@@ -1,17 +1,37 @@
 'use strict';
 
 function mainFunction ( callback) {
-    const number = + prompt ( 'Введите первое число:');
-    const exponentiation = + prompt ( 'Введите второе число:');
-    return callback ( number , exponentiation );
+    const numberOne = + prompt ( 'Введите первое число:');
+    const numberTwo = + prompt ( 'Введите второе число:');
+    return callback ( numberOne , numberTwo );
 }
 
-function callbackExponentiation ( number , exponentiation ) {
-    const callbackResult = number ** exponentiation;
+function callbackExponentiation ( numberOne , numberTwo ) {
+    const callbackResult = numberOne ** numberTwo;
     return alert( callbackResult);
 }
 
 mainFunction ( callbackExponentiation );
 
+function multiply ( numberOne , numberTwo ) {
+    const callbackResult = numberOne * numberTwo;
+    return alert( callbackResult);
+}
+
+mainFunction ( multiply );
+
+function division ( numberOne , numberTwo ) {
+    const callbackResult = numberOne / numberTwo;
+    return alert( callbackResult);
+}
+
+mainFunction ( division );
+
+function modulo ( numberOne , numberTwo ) {
+    const callbackResult = numberOne % numberTwo;
+    return alert( callbackResult);
+}
+
+mainFunction ( modulo );
 
 
