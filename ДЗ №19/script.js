@@ -6,12 +6,12 @@ function mainFunction ( callback) {
     return callback ( number , exponentiation );
 }
 
-function callback ( number , exponentiation ) {
+function callbackExponentiation ( number , exponentiation ) {
     const callbackResult = number ** exponentiation;
     return alert( callbackResult);
 }
 
-mainFunction ( callback );
+mainFunction ( callbackExponentiation );
 
 
 
