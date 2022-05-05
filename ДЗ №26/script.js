@@ -3,9 +3,9 @@
 function outputRandomly() {
     const arr = [];
     function randomArray() {
-        let randomNum = Math.floor(Math.random() * 100 + 1);
-        if (!arr.includes(randomNum)) {
-            arr.push(randomNum);
+        let randomNumber = Math.floor(Math.random() * 100 + 1);
+        if (!arr.includes(randomNumber)) {
+            arr.push(randomNumber);
         }
     }
 
