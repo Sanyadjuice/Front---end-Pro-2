@@ -19,5 +19,3 @@ function outputRandomly() {
 
 outputRandomly();
 console.log(outputRandomly());
-
-
