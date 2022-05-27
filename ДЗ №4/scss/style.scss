@@ -26,7 +26,7 @@ body {
 
 .lng-link:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 100%;
   top: calc(50% + 4px);
   transform: translateY(-50%);
@@ -42,11 +42,11 @@ body {
   transform: translate(-50%);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s ease;
+  transition: all .2s ease;
 }
 
 .lng-list {
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px rgba(0,0,0,.1);
 }
 
 .lng-list a {
@@ -64,18 +64,16 @@ body {
 .catalog_body {
   display: grid;
   grid-gap: 22px;
-  grid-template-columns: 216px auto;
+  grid-template-columns: 216px auto
 }
+
 
 .catalog_content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
 }
-
 .catalog_content_product {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-/*# sourceMappingURL=style.css.map */
