@@ -12,6 +12,7 @@
 void function () {
 
     const ul = document.getElementById('ulId');
+    console.log(ul)
     const ulTegName = []
     const ulTagValue = [];
     let atrUl = ul.attributes
@@ -28,7 +29,12 @@ void function () {
 
     ul.firstElementChild.setAttribute('data-my-name', `${myName}`);
     ul.removeAttribute('data-dog-tail');
+
 }();
+
+
+
+
 
 
 
