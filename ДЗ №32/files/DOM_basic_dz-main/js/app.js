@@ -12,17 +12,17 @@
 void function () {
 
     const ul = document.getElementById('ulId');
-    console.log(ul);
-
-    const atr = ul.getAttributeNames()
-    console.log(atr);
-
-    const newUlArr = [];
-
-    for (let i of atr) {
-        newUlArr.push(i);
+    const ulTegName = []
+    const ulTagValue = [];
+    let atrUl = ul.attributes
+    console.log(atrUl)
+    for (let key of atrUl) {
+        ulTegName.push(key.name);
+        ulTagValue.push(key.value)
     }
-    console.log(newUlArr)
+    console.log(ulTegName)
+    console.log(ulTagValue)
+
     let myName = 'Sanya';
     console.log(ul.lastElementChild.innerHTML = `Привет меня зовут ${myName}`);
 
