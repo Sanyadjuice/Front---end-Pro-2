@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center mb-5 mt-5">
+                    Please fill in information
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                    <form id="form" action="./html/list.html">
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input name="email" type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input name="firstName" type="text" class="form-control" id="firstName">
+                        </div>
+                                                <div class="mb-3">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input name="lastName" type="text" class="form-control" id="lastName">
+                        </div>
+                                                <div class="mb-3">
+                            <label for="nickname" class="form-label">Nickname</label>
+                            <input name="nickname" type="text" class="form-control" id="nickname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input name="password" type="password" class="form-control" id="password">
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label for="option" class="form-label">Select an option</label>
+                            <select name="option" class="form-select" id="option">
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                                <option value="4">Option 4</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 ">
+                            <label for="message" class="form-label">Type in your message</label>
+                            <textarea
+                                    class="form-control"
+                                    placeholder="Leave a comment here"
+                                    style="height: 100px"
+                                    name="message"
+                                    id="message"
+                            ></textarea>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Default file input example</label>
+                            <input name="file" class="form-control" type="file">
+                        </div>
+
+
+                        <div class="mb-3 form-check">
+                            <input name="terms" type="checkbox" class="form-check-input" id="AgreeWithTerms">
+                            <label class="form-check-label" for="AgreeWithTerms">Согласен с условиями</label>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
