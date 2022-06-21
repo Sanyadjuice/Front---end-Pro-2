@@ -30,6 +30,7 @@ function model() {
             } catch (error) {
                 response = {success: false, errors: error}
             }
+            return response
         },
 
         removeTodoItems(id) {
