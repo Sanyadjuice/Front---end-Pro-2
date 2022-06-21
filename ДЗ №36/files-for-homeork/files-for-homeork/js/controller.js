@@ -4,9 +4,10 @@ function controller(view, model, payLoad) {
     const formSelector = payLoad.formSelector;
     const todoContainerSelector = payLoad.todoItemsSelector;
 
+
     const form = document.querySelector(formSelector);
-    console.log(form)
     const todoContainer = document.querySelector(todoContainerSelector);
+
 
     model.init(formSelector);
     view.init(form, todoContainer);
@@ -33,9 +34,10 @@ function controller(view, model, payLoad) {
 
     }
 
-    const submitHandler = e => {
-        e.preventDefault();
-        e.stopPropagation();
+
+    const submitHandler = event => {
+        event.preventDefault();
+        event.stopPropagation();
         const inputs = form.querySelectorAll('input, textarea');
 
         const data = model.setData(fetchFormData(inputs));
@@ -52,6 +54,7 @@ function controller(view, model, payLoad) {
         if(!event.target.classList.contains('remove')) return;
         let todoId = event.target.closest('[data-todo-id]').getAttribute('data-todo-id');
         todoId = Number(todoId);
+        console.log(todoId)
 
         model.removeTodoItems(todoId);
         view.removeTodoItems(todoId);

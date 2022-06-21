@@ -10,7 +10,7 @@ function view() {
         <div class="taskWrapper">
              <div class="taskHeading">${data.title}</div>
              <div class="taskDescription">${data.description}</div>
-             <button class="btn btn-warning">Delete</button>
+             <button class="btn btn-warning remove">Delete</button>
         </div>
         `;
         return wrapperElement;
