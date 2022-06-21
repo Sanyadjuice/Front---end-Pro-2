@@ -5,7 +5,7 @@ void (function () {
     const form = document.querySelector(formSelector);
 
     const submitHandler = (event) => {
-        // event.preventDefault();
+        event.preventDefault();
 
         const inputs = event.target.querySelectorAll("input, textarea, select");
         const data = {};
@@ -15,6 +15,7 @@ void (function () {
         }
 
         localStorage.setItem(formSelector, JSON.stringify(data));
+        window.location.href = './html/list.html'
     };
 
     const loadHandler = () => {
@@ -22,7 +23,7 @@ void (function () {
 
         const inputs = form.querySelectorAll("input, textarea, select");
         const data = JSON.parse(localStorage.getItem(formSelector));
-        console.log(formSelector)
+
 
         for (const input of inputs) {
             input.value = data[input.name];
