@@ -13,5 +13,5 @@ void function () {
         model(),
         payLoad
     );
-    app();
+    app()
 }()
